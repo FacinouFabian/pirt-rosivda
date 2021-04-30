@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0EEFA9263AEE5B00E2AD49 /* MyPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0EEFA8263AEE5B00E2AD49 /* MyPointAnnotation.swift */; };
+		1FDFF947263AA387000FAC71 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDFF946263AA387000FAC71 /* DetailView.swift */; };
 		1FE9E3AF26314D9200358DA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9E3AE26314D9200358DA4 /* AppDelegate.swift */; };
 		1FE9E3B126314D9200358DA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9E3B026314D9200358DA4 /* SceneDelegate.swift */; };
 		1FE9E3B326314D9200358DA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9E3B226314D9200358DA4 /* ViewController.swift */; };
@@ -15,6 +17,8 @@
 		1FE9E3BB26314D9800358DA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE9E3B926314D9800358DA4 /* LaunchScreen.storyboard */; };
 		1FE9E3C626314D9800358DA4 /* rosivdaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9E3C526314D9800358DA4 /* rosivdaTests.swift */; };
 		1FE9E3D126314D9800358DA4 /* rosivdaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9E3D026314D9800358DA4 /* rosivdaUITests.swift */; };
+		1FE9E3E526317D8200358DA4 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9E3E426317D8200358DA4 /* APIManager.swift */; };
+		1FE9E3EB2631805700358DA4 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9E3EA2631805700358DA4 /* Locations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F0EEFA8263AEE5B00E2AD49 /* MyPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPointAnnotation.swift; sourceTree = "<group>"; };
+		1FDFF946263AA387000FAC71 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		1FE9E3AB26314D9200358DA4 /* rosivda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rosivda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE9E3AE26314D9200358DA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FE9E3B026314D9200358DA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,8 @@
 		1FE9E3CC26314D9800358DA4 /* rosivdaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rosivdaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE9E3D026314D9800358DA4 /* rosivdaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rosivdaUITests.swift; sourceTree = "<group>"; };
 		1FE9E3D226314D9800358DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FE9E3E426317D8200358DA4 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		1FE9E3EA2631805700358DA4 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,12 @@
 		1FE9E3AD26314D9200358DA4 /* rosivda */ = {
 			isa = PBXGroup;
 			children = (
+				1FE9E3E92631802B00358DA4 /* Models */,
 				1FE9E3AE26314D9200358DA4 /* AppDelegate.swift */,
 				1FE9E3B026314D9200358DA4 /* SceneDelegate.swift */,
 				1FE9E3B226314D9200358DA4 /* ViewController.swift */,
+				1FE9E3E426317D8200358DA4 /* APIManager.swift */,
+				1FDFF946263AA387000FAC71 /* DetailView.swift */,
 				1FE9E3B426314D9200358DA4 /* Main.storyboard */,
 				1FE9E3B726314D9800358DA4 /* Assets.xcassets */,
 				1FE9E3B926314D9800358DA4 /* LaunchScreen.storyboard */,
@@ -126,6 +137,15 @@
 				1FE9E3D226314D9800358DA4 /* Info.plist */,
 			);
 			path = rosivdaUITests;
+			sourceTree = "<group>";
+		};
+		1FE9E3E92631802B00358DA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1FE9E3EA2631805700358DA4 /* Locations.swift */,
+				1F0EEFA8263AEE5B00E2AD49 /* MyPointAnnotation.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE9E3E526317D8200358DA4 /* APIManager.swift in Sources */,
 				1FE9E3B326314D9200358DA4 /* ViewController.swift in Sources */,
 				1FE9E3AF26314D9200358DA4 /* AppDelegate.swift in Sources */,
+				1FE9E3EB2631805700358DA4 /* Locations.swift in Sources */,
+				1F0EEFA9263AEE5B00E2AD49 /* MyPointAnnotation.swift in Sources */,
 				1FE9E3B126314D9200358DA4 /* SceneDelegate.swift in Sources */,
+				1FDFF947263AA387000FAC71 /* DetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
